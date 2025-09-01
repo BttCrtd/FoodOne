@@ -13,6 +13,20 @@ const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const closeModalBtn = document.querySelectorAll(".close");
 
+const firstname = document.getElementById("first");
+const lastName = document.getElementById("last");
+const email = document.getElementById("email");
+const birthday = document.getElementById("birthdate");
+const quantity = document.getElementById("quantity");
+const location1 = document.getElementById("location1");
+const location2 = document.getElementById("location2");
+const location3 = document.getElementById("location3");
+const location4 = document.getElementById("location4");
+const location5 = document.getElementById("location5");
+const location6 = document.getElementById("location6");
+const checkbox1 = document.getElementById("checkbox1");
+const checkbox2 = document.getElementById("checkbox2");
+
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
@@ -28,3 +42,4 @@ function launchModal() {
 function closeModal() {
   modalbg.style.display = "none";
 }
+
