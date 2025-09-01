@@ -202,6 +202,13 @@ input {
   border: 0.8px solid #ccc;
   outline: none;
 }
+
+.error {
+  display: none;
+  color: #e54858;
+  font-size: 0.6em;
+}
+
 .text-control {
   margin: 0;
   padding: 8px;
