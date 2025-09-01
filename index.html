@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- Logo & Navigation -->
     <div class="topnav" id="myTopnav">
       <div class="header-logo">
       <img alt="logo" src="Logo.png" width="auto" height="auto" />
@@ -30,6 +31,7 @@
     </div>
   </div>
     <main>
+      <!-- Présentation du Marathon -->
       <div class="hero-section">
         <div class="hero-content">
           <h1 class="hero-headline">
@@ -52,19 +54,22 @@
         </button>
       </div>
 
+      <!-- Modal -->
       <div class="bground">
         <div class="content">
           <span class="close"></span>
           <div class="modal-body">
+            <!-- Formulaire d'inscription-->
             <form
               name="reserve"
               action="index.html"
               method="get"
               onsubmit="return validate();"
             >
+              <!--Champ Prénom -->
               <div
                 class="formData">
-                <label>Prénom</label><br>
+                <label for="first">Prénom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -73,9 +78,10 @@
                   minlength="2"
                 /><br>
               </div>
+              <!--Champ Nom -->
               <div
                 class="formData">
-                <label>Nom</label><br>
+                <label for="last">Nom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -83,9 +89,10 @@
                   name="last"
                 /><br>
               </div>
+              <!--Champ Email -->
               <div
                 class="formData">
-                <label>E-mail</label><br>
+                <label for="email">E-mail</label><br>
                 <input
                   class="text-control"
                   type="email"
@@ -93,9 +100,10 @@
                   name="email"
                 /><br>
               </div>
+              <!--Champ Date de naissance -->
               <div
                 class="formData">
-                <label>Date de naissance</label><br>
+                <label for="birthdate">Date de naissance</label><br>
                 <input
                   class="text-control"
                   type="date"
@@ -103,11 +111,13 @@
                   name="birthdate"
                 /><br>
               </div>
+              <!--Champ Nombre de tournois-->
               <div
                 class="formData">
-                <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
+                <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
               </div>
+              <!--Champ Choix de la ville-->
               <p class="text-label">Quelles villes ?</p>
               <div
                 class="formData">
@@ -178,20 +188,22 @@
                   Portland</label
                 >
               </div>
-
-              <div
-                class="formData">
+              
+              <div class="formData">
+                <!--Champ Conditions d'utilisation-->
                 <input
                   class="checkbox-input"
                   type="checkbox"
                   id="checkbox1"
+                  required
                   checked
                 />
-                <label class="checkbox2-label" for="checkbox1" required>
+                <label class="checkbox2-label" for="checkbox1">
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
                 <br>
+                <!--Champ Newsletter-->
                 <input class="checkbox-input" type="checkbox" id="checkbox2" />
                 <label class="checkbox2-label" for="checkbox2">
                   <span class="checkbox-icon"></span>
@@ -210,6 +222,7 @@
         </div>
       </div>
     </main>
+    <!-- Footer -->
     <footer>
       <p class="copyrights">
         Copyright 2014 - 2020, GameOn Inc.
